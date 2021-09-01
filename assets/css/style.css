@@ -36,3 +36,16 @@ header h2 {
 .breadLink {
     text-decoration: none;
 }
+
+/* about page ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.tab-content{
+    border: 1px solid #DDD;
+    border-top: none;
+    padding: 10px;
+}
+a, a:hover {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
