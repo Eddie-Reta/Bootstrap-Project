@@ -1,6 +1,6 @@
-$(function (){
-    $("[data-toggle='tooltip']").tooltip()
-});
+// $(function (){
+//     $("[data-toggle='tooltip']").tooltip()
+// });
 
 (() => {
     const nav = document.querySelector(".navbar");
