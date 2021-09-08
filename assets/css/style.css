@@ -21,13 +21,15 @@ header h2 {
     background-color: #901cad;
 }
 
-
+/* jumbotron for all pages */
 .jumbotron {
     margin: 0;
     padding: 30px;
     background-image: linear-gradient(to right, #5637dd, #3046c5, #60106b);
     color: white;
 }
+
+/* Home Page */
 .row-content {
     padding: 50px 0;
     border-bottom: 1px ridge;
@@ -43,6 +45,13 @@ header h2 {
 .carousel {
     border: solid #5637DD;
 }
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
 /* about page ////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .tab-content{

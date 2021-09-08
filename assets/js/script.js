@@ -14,3 +14,26 @@
         }
     }
 })();
+
+$(function(){
+    $(".carousel").carousel({interval: 2000});
+    $("#carouselButton").on("click", () => {
+        
+        const carouselBtn = $("#carouselButton ").children("i").hasClass("fa-pause");
+        const playBtn = $("#carouselButton").children("i").addClass("fa-play");
+        const pauseBtn = $("#carouselButton").children("i").addClass("fa-pause");
+
+        if (carouselBtn) {
+            $(".carousel").carousel("pause");
+            $("#carouselButton").children("i").removeClass("fa-pause");
+            playBtn;
+        } else {
+            $(".carousel").carousel("cycle");
+            $(".carouselButton").children("i").removeClass("fa-play");
+            pauseBtn;
+        } 
+    });
+    // $("#carouselPlay").on("click", () => {
+    //     $(".carousel").carousel("cycle");
+    // });
+});
