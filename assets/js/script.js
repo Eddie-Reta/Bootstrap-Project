@@ -33,7 +33,4 @@ $(function(){
             pauseBtn;
         } 
     });
-    // $("#carouselPlay").on("click", () => {
-    //     $(".carousel").carousel("cycle");
-    // });
 });
