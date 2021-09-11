@@ -1,3 +1,33 @@
+$(function(){
+    $(".carousel").carousel({interval: 2000});
+    $("#carouselButton").on("click", function() {
+        
+        const carouselBtn = $("#carouselButton ").children("i").hasClass("fa-pause");
+        const playBtn = $("#carouselButton").children("i").addClass("fa-play");
+        const pauseBtn = $("#carouselButton").children("i").addClass("fa-pause");
+
+        if (carouselBtn) {
+            $(".carousel").carousel("pause");
+            $("#carouselButton").children("i").removeClass("fa-pause");
+            playBtn;
+        } else {
+            $(".carousel").carousel("cycle");
+            $(".carouselButton").children("i").removeClass("fa-play");
+            pauseBtn;
+        } 
+    });
+
+    $("#reserveButton").on("click", function() {
+        $("#reserveModal").modal("show");
+    });
+    $("#loginButton").on("click", function() {
+        $("#loginModal").modal("show");
+    });
+});
+
+
+
+
 //tooltips toggle for reserve button 
 // $(function (){
 //     $("[data-toggle='tooltip']").tooltip()
@@ -35,22 +65,4 @@
 //         } 
 //     });
 // });
-$(function(){
-    $(".carousel").carousel({interval: 2000});
-    $("#carouselButton").on("click", function() {
-        
-        const carouselBtn = $("#carouselButton ").children("i").hasClass("fa-pause");
-        const playBtn = $("#carouselButton").children("i").addClass("fa-play");
-        const pauseBtn = $("#carouselButton").children("i").addClass("fa-pause");
 
-        if (carouselBtn) {
-            $(".carousel").carousel("pause");
-            $("#carouselButton").children("i").removeClass("fa-pause");
-            playBtn;
-        } else {
-            $(".carousel").carousel("cycle");
-            $(".carouselButton").children("i").removeClass("fa-play");
-            pauseBtn;
-        } 
-    });
-});
